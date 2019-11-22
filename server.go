@@ -14,7 +14,7 @@ type Client struct {
 var msg = make(chan string)
 var msgMap = make(map[string]Client)
 func main(){
-	listener, err := net.Listen("tcp", "118.24.148.138:8007")
+	listener, err := net.Listen("tcp", "127.0.0.1:8007")
 	if err != nil{
 		fmt.Println("listen err :", err)
 		return
